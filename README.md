@@ -12,6 +12,12 @@ The data for this project is sourced from the Kaggle dataset:
 
 ### 1.Coffee Consumers Count
 - How many people in each city are estimated to consume coffee, given that 25% of the population does?
+```sql
+SELECT TYPE, COUNT(TYPE) AS TOTAL_COUNT FROM NETFLIX_TITLES
+GROUP BY TYPE
+ORDER BY TOTAL_COUNT DESC;
+GO
+```
 
 ### 2.Total Revenue from Coffee Sales (OVERALL SALES)
 - What is the total revenue generated from coffee sales across all cities in the last quarter of 2023?
